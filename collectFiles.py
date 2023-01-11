@@ -1,3 +1,51 @@
+#===============================================================================
+# NUKE COLLECT FILES 1.2                                                                                  
+# By Mariano Antico                                                                                       
+# Barraca Post                                                                                            
+# www.barraca.com.ar                                                                                      
+# www.marianoantico.blogspot.com                                                                          
+# Last Updated: September 21, 2011.                                                                           
+# All Rights Reserved .
+#  
+# Description:
+# Collect files of the script
+#
+# Tutorials:
+# www.marianoantico.blogspot.com
+# www.vimeo.com/29200474
+#
+# Supported Video Files:
+# 'mov', 'avi', 'mpeg', 'mp4', 'R3D'
+#
+# Installation Notes:
+# 
+# 1. Copy "collectFiles.py" to nuke plugins directory (Example: "C:\Program Files\Nuke6.1v1\plugins")
+# 2. Open "Init.py" located on "C:\Program Files\Nuke6.1v1\plugins"
+# 3. And paste this:
+# import collectFiles
+# 
+# 4. Save it and restart nuke
+# 5. Open the Script Command window and paste this:
+# collectFiles.collectFiles()
+# 
+# 6. Check the python button and press ok
+# 
+# 
+# Create Menu Node:
+# 
+# 1. Open "Menu.py" located on "C:\Program Files\Nuke6.1v1\plugins"
+# 2. And paste this at the end:
+# 
+# #Collect Files Menu Node
+# collectMenu = nuke.menu("Nodes").addMenu("Collect_Files")
+# collectMenu.addCommand('Collect Files', 'collectFiles.collectFiles()')
+# collectMenu.addCommand('Help', 'collectFiles.myBlog()')
+# 
+# Run:
+# collectFiles()                                                                                   
+#===============================================================================
+
+
 import nuke
 import os
 import sys
