@@ -44,6 +44,7 @@
 # Run:
 # collectFiles()                                                                                   
 #===============================================================================
+# This Version Only for after version of Nuke12, Editted by hvfxprod.
 
 
 import nuke
